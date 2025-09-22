@@ -18,7 +18,7 @@ This function processes video input and performs several steps:
 
 - **Tracking (Yolov8)**: Detects and tracks objects/faces in video frames.
 - **Shot Detection**: Splits video into shots using `TransNetV2`.
-- **Face Embedding (Facenet512)**: Extracts embeddings for detected faces. At the moment it uses `Facenet512` embeddings, but there are plans to support [InsightFace](https://github.com/deepinsight/insightface), [AdaFace](https://github.com/swghosh/adaface) and [MagFace](https://github.com/IrvingMeng/MagFace) embeddings.
+- **Face Embedding (Facenet512)**: Extracts embeddings for detected faces. At the moment it uses `Facenet512` embeddings, but there are plans to support [InsightFace](https://github.com/deepinsight/insightface), [AdaFace](https://github.com/mk-minchul/AdaFace) and [MagFace](https://github.com/IrvingMeng/MagFace) embeddings.
 - **Face Quality Assessment**: Evaluates face quality and adds scores.
 - **Track Splitting**: Splits tracks when faces of good quality are different (e.g., different people in the same chair without a gap).
 - **Track Merging**: Merges tracks where appropriate using embedding similarity.
